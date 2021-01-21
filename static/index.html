@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="stats">
+        <div><span id="gold"></span></div>
+        <div>
+            <span id="wood"></span>
+            <button onclick='sell("wood",20)'>20</button>
+            <button onclick='sell("wood",0)'>All</button>
+        </div>
+        <div>
+            <span id="stone"></span>
+            <button onclick='sell("stone",20)'>20</button>
+            <button onclick='sell("stone",0)'>All</button>
+        </div>
+        <div>
+            <span id="food"></span>
+            <button onclick='sell("food",20)'>20</button>
+            <button onclick='sell("food",0)'>All</button>
+        </div>
+        <div>
+            <span id="iron"></span>
+            <button onclick='sell("iron",1)'>1</button>
+            <button onclick='sell("iron",0)'>All</button>
+        </div>
+    </div>
+    <form class="chat-form">
+        <label class="chat-label">
+            Enter a message:
+            <input type="text" class="chat-input">
+        </label>
+        <input type="submit" class="chat-submit" value="enter">
+    </form>
+
+    <div class="chat-dump"></div>
+
+  <script src="socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>

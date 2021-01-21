@@ -1,0 +1,26 @@
+.chat-message {
+    color: green;
+}
+.chat-message--user {
+    color: blue;
+}
+
+
+.stats {
+    font-weight: bold;
+}
+#gold {
+    color: gold
+}
+#wood {
+    color: lightgreen
+}
+#stone {
+    color: darkgray
+}
+#food {
+    color: darkred
+}
+#iron {
+    color: grey
+}
